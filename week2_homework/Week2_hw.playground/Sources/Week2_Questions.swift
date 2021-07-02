@@ -36,14 +36,94 @@ public class Week2_Q2 {
     }
 }
 
+// MARK: - Week2_Q.3.
+/**
+ Şişe vurma oyununu kodlayınız.
+ */
+struct Player {
+    var username: String = ""
+    var score: Int = 0
+}
 
-public class Week2_Q3 {
-    // MARK: - Q.3.
-    /**
-     Şişe vurma oyununu kodlayınız.
-     */
-    public static func x() {
+enum BottleState: Int {
+    case rolling = 0 // devrik
+    case standingUp = 1 // ayakta
+}
+
+struct Bottle {
+    var d : Double = 0.0 // position
+    var delta : Double = 0.1 // kaplama uzaklığı
+    var state: BottleState = .standingUp
+}
+
+struct Launcher {
+    private let g = 10.0
+    
+    var teta = Double.random(in: 0...90) // yerleşim açısı
+    var V = Double.random(in: 0...100) // fırlatma hızı m/s
+    
+    public func calculateRange() -> Double {
+        let R = V*V*sin(2*teta)/g
+        return R
+    }
+}
+
+public class Game {
+    var player: Player = Player()
+    var launcher: Launcher = Launcher()
+    var bottle: Bottle = Bottle()
+    
+    public init() {}
+    public func setPlayerName(name: String) {
+        player.username = name
+    }
+    
+    public func setBottlePosition(d: Double, delta: Double) {
+        if 0.0 > d || d > 1500.0 {
+            print("Error! Please set the position between 0.0 - 1500.0")
+            exit(0)
+        } else{
+            bottle.d = d
+        }
         
+        
+        if 0.1 > delta || delta > 1.0 {
+            print("Error! Please set the position between 0.1 - 1.0")
+            exit(0)
+        } else{
+            bottle.delta = delta
+        }
+    }
+    
+    public func setBallFiringRange(_ teta: Double, _ V: Double) {
+        if 0.0 > teta || teta > 90.0 {
+            print("Error! Please set the angle (teta) between 0.0 - 90.0")
+            exit(0)
+        }else{
+            launcher.teta = teta
+        }
+        if 0.0 > V || V > 100.0 {
+            print("Error! Please set the Velocity (V) between 0.0 - 100.0")
+            exit(0)
+        } else{
+            launcher.V = V
+        }
+    }
+    
+    public func fire() {
+        let range = launcher.calculateRange()
+        
+        if (bottle.d - bottle.delta) <= range  && range <= (bottle.d + bottle.delta) {
+            bottle.state = .rolling
+            player.score += 1
+            print("Congratz! You hit the bottle!")
+        } else {
+            bottle.state = .standingUp
+            player.score -= 1
+            print("Ooops! You missed the bottle!")
+        }
+        
+        print("Player username: \(player.username), score: \(player.score)")
     }
 }
 
@@ -106,6 +186,8 @@ public class Week2_Q5 {
 // MARK: - Week2_Q6.
 /**
  if let - guard let kullanım tercihi neye göre belirlenir?
+ 
+ Her ikisi de aynı görevi yapıyor olmasına rağmen, guard let ilk olarak koşulu değerlendirip, eğer uygun koşul sağlanmıyor ise baştan return yapar; if let ise else bloğuna gelene kadar return olacağı durumu çalıştırmaz bu nedenle kullanım amaçları istenen koşullara bağlı olarak daha okunabilir kod yazılmasını sağlamak kısmında farklı olabilir. Aynı görevi üstlenebilmelerine rağmen bazı koşullarda guard let yapısı, bazı koşullarda if let yapısı kodun tekrarlanmasını engelleyebilir.
  */
 
 

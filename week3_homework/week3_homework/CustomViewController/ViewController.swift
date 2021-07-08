@@ -51,7 +51,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
-    
 }
 
 // MARK: - SearchBar Delegate 
@@ -140,10 +139,8 @@ extension UITableView {
             })
             
         })
-        
         self.backgroundView = emptyView
         self.separatorStyle = .none
-        
     }
     func restore() {
         self.backgroundView = nil

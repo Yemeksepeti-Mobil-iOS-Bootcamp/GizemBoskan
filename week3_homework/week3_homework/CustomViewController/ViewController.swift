@@ -65,7 +65,7 @@ extension ViewController: UISearchBarDelegate {
         isFiltering = true
         
         if filteredUsers.isEmpty {
-            tableView.setEmptyView(title: "Oops! Your searching did not found.", message: "Search for another result!")
+            tableView.setEmptyView(title: "Oops! Your search was not found.", message: "Search for another result!")
         }else {
             tableView.restore()
         }

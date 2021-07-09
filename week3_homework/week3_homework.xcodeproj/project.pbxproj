@@ -83,7 +83,6 @@
 				8EB59D46269736EE0082CCD9 /* PageViewController */,
 				8EB59D48269736EE0082CCD9 /* MapView */,
 				8EB59D4E269736EE0082CCD9 /* CoreData */,
-				8ED8B9B82698DB6200AE0445 /* week3.xcdatamodeld */,
 				8EB59D3F2697364E0082CCD9 /* AppDelegate.swift */,
 				8EB59D23269729CF0082CCD9 /* SceneDelegate.swift */,
 				8EB59D27269729CF0082CCD9 /* Main.storyboard */,
@@ -144,6 +143,7 @@
 				8EB59D4F269736EE0082CCD9 /* CookListViewController.swift */,
 				8ED8B9B62698C8AE00AE0445 /* CookModel.swift */,
 				8EB59D50269736EE0082CCD9 /* CookCreateViewController.swift */,
+				8ED8B9B82698DB6200AE0445 /* week3.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";

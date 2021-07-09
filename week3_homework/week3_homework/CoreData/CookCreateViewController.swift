@@ -8,14 +8,14 @@
    
    class CookCreateViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     // MARK: - Properties
+    var cookLists = [CookModel]()
     @IBOutlet weak var cookImage: UIImageView!
     @IBOutlet weak var cookName: UITextField!
+    
     
     // MARK: - UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
         cookImage.isUserInteractionEnabled = true
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(choosePhoto))
         cookImage.addGestureRecognizer(tapRecognizer)
@@ -44,6 +44,7 @@
         newCook.setValue(cookName.text, forKey: "name")
         let imageData = cookImage.image?.jpegData(compressionQuality: 0.5)
         newCook.setValue(imageData, forKey: "image")
+        newCook.setValue(UUID(), forKey: "id")
         
         do {
             try context.save()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NMR-hy-gob">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E9P-Yh-Xdz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -104,7 +104,7 @@
         <!--View Controller-->
         <scene sceneID="2AK-dA-oy6">
             <objects>
-                <viewController id="NMR-hy-gob" customClass="ViewController" customModule="Week_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NMR-hy-gob" customClass="ViewController" customModule="week3_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Xr-TY-Cqr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,7 +173,7 @@
         <!--Page View Controller-->
         <scene sceneID="aNP-S6-L7n">
             <objects>
-                <viewController id="jfS-3z-eQD" customClass="PageViewController" customModule="Week_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jfS-3z-eQD" customClass="PageViewController" customModule="week3_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YiU-Rh-P3o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,12 +188,12 @@
         <!--Map View Controller-->
         <scene sceneID="P9x-rc-dn0">
             <objects>
-                <viewController id="Qfx-mf-bxx" customClass="MapViewController" customModule="Week_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Qfx-mf-bxx" customClass="MapViewController" customModule="week3_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5XJ-rM-8vt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="F0K-g7-O7L">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F0K-g7-O7L">
                                 <rect key="frame" x="0.0" y="44" width="414" height="758"/>
                                 <connections>
                                     <outlet property="delegate" destination="Qfx-mf-bxx" id="3gZ-Vr-8Cd"/>
@@ -210,6 +210,7 @@
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HtW-qk-jqH">
                                 <rect key="frame" x="191" y="401.5" width="32" height="32"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="EiA-me-sLe"/>
                                     <constraint firstAttribute="width" constant="32" id="cFd-bO-G3J"/>
@@ -242,7 +243,7 @@
         <!--Cook List-->
         <scene sceneID="MkD-Ri-vac">
             <objects>
-                <viewController id="nGl-Xm-fOF" customClass="CookListViewController" customModule="Week_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nGl-Xm-fOF" customClass="CookListViewController" customModule="week3_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WlC-2F-05h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -293,19 +294,19 @@
         <!--Cook Create View Controller-->
         <scene sceneID="p6u-fl-5AW">
             <objects>
-                <viewController id="fP8-t0-wt6" customClass="CookCreateViewController" customModule="Week_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fP8-t0-wt6" customClass="CookCreateViewController" customModule="week3_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U9W-ZD-PTl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02.png" translatesAutoresizingMaskIntoConstraints="NO" id="jZy-Ns-B2m">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gallery" translatesAutoresizingMaskIntoConstraints="NO" id="jZy-Ns-B2m">
                                 <rect key="frame" x="132" y="118" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="60G-GZ-W2r"/>
                                     <constraint firstAttribute="width" constant="150" id="aSD-tJ-yS4"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place enter cook name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KCt-Xa-Ghn">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter cook name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KCt-Xa-Ghn">
                                 <rect key="frame" x="20" y="278" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="5dN-Pj-XPs"/>
@@ -367,11 +368,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="02.png" width="1242" height="2208"/>
+        <image name="gallery" width="626" height="625"/>
         <image name="mappin" catalog="system" width="105" height="128"/>
         <image name="photo-1" width="2400" height="1350"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

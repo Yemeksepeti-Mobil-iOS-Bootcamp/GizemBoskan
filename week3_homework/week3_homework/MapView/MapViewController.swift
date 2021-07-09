@@ -4,6 +4,7 @@
 import UIKit
 import MapKit
 
+
 class MapViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var mapView: MKMapView!
@@ -11,23 +12,28 @@ class MapViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     var lastLocation: CLLocation?
+    let regionInMeters: Double = 10000
+
     
     // MARK: - UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        addressLabel.text = "Drag the pin to find your location!"
+        addressLabel.numberOfLines = 0
         checkLocationServices()
-    }
+            }
     
     // MARK: - Helpers
     func setupLocationManager() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
-    
+  
+      
     func showUserLocationCenterMap() {
         if let location = locationManager.location?.coordinate {
-            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: 100, longitudinalMeters: 100)
+       let region = MKCoordinateRegion(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+           
             mapView.setRegion(region, animated: true)
         }
     }
@@ -36,18 +42,12 @@ class MapViewController: UIViewController {
         if CLLocationManager.locationServicesEnabled() {
             setupLocationManager()
             checkLocationAuthorization()
-        } else {
-            //TODO: Kullanıcıya ayarlardan konum servisini açması istenebilir
         }
     }
     
     func checkLocationAuthorization() {
         switch CLLocationManager.authorizationStatus() {
         case .authorizedWhenInUse:
-            /*mapView.showsUserLocation = true
-             showUserLocationCenterMap()
-             locationManager.startUpdatingLocation()*/
-            //Pinleme sonrası
             trackingLocation()
         case .denied:
             break
@@ -78,15 +78,7 @@ class MapViewController: UIViewController {
 }
 // MARK: - Location Manager Delegate
 extension MapViewController: CLLocationManagerDelegate {
-    
-    //Pinlemeden önce kullandık
-    /*func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-     guard let location = locations.last else { return }
-     let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-     let region = MKCoordinateRegion(center: center, latitudinalMeters: 100, longitudinalMeters: 100)
-     mapView.setRegion(region, animated: true)
-     }*/
-    
+
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         checkLocationAuthorization()
     }
@@ -115,14 +107,10 @@ extension MapViewController: MKMapViewDelegate {
             }
             
             guard let placemark = placemarks?.first else { return }
-            
-            let city = placemark.locality ?? "City"
-            let street = placemark.thoroughfare ?? "Street"
-            
-            self.addressLabel.text = "\(city) - \(street)"
+                        
+            self.addressLabel.text = "\(placemark.thoroughfare ?? "Street"), \(placemark.locality ?? "City"), \(placemark.subLocality ?? ""), \(placemark.administrativeArea ?? ""), \(placemark.postalCode ?? ""), \(placemark.country ?? "")"
         }
     }
-    
 }
 
 

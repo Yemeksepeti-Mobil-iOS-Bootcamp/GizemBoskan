@@ -1,9 +1,4 @@
-//
-//  User.swift
-//  Week-3
-//
-//  Created by Kerim Caglar on 3.07.2021.
-//
+
 
 import Foundation
 

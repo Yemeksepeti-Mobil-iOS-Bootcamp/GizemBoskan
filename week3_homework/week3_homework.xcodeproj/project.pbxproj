@@ -21,8 +21,9 @@
 		8EB59D59269736EF0082CCD9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB59D4B269736EE0082CCD9 /* User.swift */; };
 		8EB59D5B269736EF0082CCD9 /* CookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB59D4F269736EE0082CCD9 /* CookListViewController.swift */; };
 		8EB59D5C269736EF0082CCD9 /* CookCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB59D50269736EE0082CCD9 /* CookCreateViewController.swift */; };
-		8EB59D5E269736EF0082CCD9 /* Week-3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EB59D53269736EE0082CCD9 /* Week-3.xcdatamodeld */; };
 		8EB59D6126979CFE0082CCD9 /* FrameVsBond in Resources */ = {isa = PBXBuildFile; fileRef = 8EB59D6026979CFE0082CCD9 /* FrameVsBond */; };
+		8ED8B9B72698C8AE00AE0445 /* CookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8B9B62698C8AE00AE0445 /* CookModel.swift */; };
+		8ED8B9BA2698DB6200AE0445 /* week3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8B9B82698DB6200AE0445 /* week3.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +43,9 @@
 		8EB59D4B269736EE0082CCD9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8EB59D4F269736EE0082CCD9 /* CookListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookListViewController.swift; sourceTree = "<group>"; };
 		8EB59D50269736EE0082CCD9 /* CookCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookCreateViewController.swift; sourceTree = "<group>"; };
-		8EB59D54269736EE0082CCD9 /* Week-3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Week-3.xcdatamodel"; sourceTree = "<group>"; };
 		8EB59D6026979CFE0082CCD9 /* FrameVsBond */ = {isa = PBXFileReference; lastKnownFileType = text; path = FrameVsBond; sourceTree = "<group>"; };
+		8ED8B9B62698C8AE00AE0445 /* CookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookModel.swift; sourceTree = "<group>"; };
+		8ED8B9B92698DB6200AE0445 /* week3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = week3.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +79,11 @@
 			isa = PBXGroup;
 			children = (
 				8EB59D3826972B660082CCD9 /* NotificationCenter */,
-				8EB59D4A269736EE0082CCD9 /* Model */,
 				8EB59D41269736A40082CCD9 /* CustomViewController */,
 				8EB59D46269736EE0082CCD9 /* PageViewController */,
 				8EB59D48269736EE0082CCD9 /* MapView */,
 				8EB59D4E269736EE0082CCD9 /* CoreData */,
-				8EB59D53269736EE0082CCD9 /* Week-3.xcdatamodeld */,
+				8ED8B9B82698DB6200AE0445 /* week3.xcdatamodeld */,
 				8EB59D3F2697364E0082CCD9 /* AppDelegate.swift */,
 				8EB59D23269729CF0082CCD9 /* SceneDelegate.swift */,
 				8EB59D27269729CF0082CCD9 /* Main.storyboard */,
@@ -96,6 +97,7 @@
 		8EB59D3826972B660082CCD9 /* NotificationCenter */ = {
 			isa = PBXGroup;
 			children = (
+				8EB59D4A269736EE0082CCD9 /* Model */,
 				8EB59D3A26972B660082CCD9 /* NotificationListenerVC.swift */,
 				8EB59D3B26972B660082CCD9 /* NotificationSenderVC.swift */,
 				8EB59D3926972B660082CCD9 /* NotificationExtension.swift */,
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				8EB59D4F269736EE0082CCD9 /* CookListViewController.swift */,
+				8ED8B9B62698C8AE00AE0445 /* CookModel.swift */,
 				8EB59D50269736EE0082CCD9 /* CookCreateViewController.swift */,
 			);
 			path = CoreData;
@@ -217,11 +220,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EB59D58269736EF0082CCD9 /* MapViewController.swift in Sources */,
+				8ED8B9BA2698DB6200AE0445 /* week3.xcdatamodeld in Sources */,
 				8EB59D5C269736EF0082CCD9 /* CookCreateViewController.swift in Sources */,
 				8EB59D402697364F0082CCD9 /* AppDelegate.swift in Sources */,
+				8ED8B9B72698C8AE00AE0445 /* CookModel.swift in Sources */,
 				8EB59D57269736EF0082CCD9 /* PageViewController.swift in Sources */,
 				8EB59D3C26972B660082CCD9 /* NotificationExtension.swift in Sources */,
-				8EB59D5E269736EF0082CCD9 /* Week-3.xcdatamodeld in Sources */,
 				8EB59D3D26972B660082CCD9 /* NotificationListenerVC.swift in Sources */,
 				8EB59D59269736EF0082CCD9 /* User.swift in Sources */,
 				8EB59D24269729CF0082CCD9 /* SceneDelegate.swift in Sources */,
@@ -431,13 +435,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8EB59D53269736EE0082CCD9 /* Week-3.xcdatamodeld */ = {
+		8ED8B9B82698DB6200AE0445 /* week3.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8EB59D54269736EE0082CCD9 /* Week-3.xcdatamodel */,
+				8ED8B9B92698DB6200AE0445 /* week3.xcdatamodel */,
 			);
-			currentVersion = 8EB59D54269736EE0082CCD9 /* Week-3.xcdatamodel */;
-			path = "Week-3.xcdatamodeld";
+			currentVersion = 8ED8B9B92698DB6200AE0445 /* week3.xcdatamodel */;
+			path = week3.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

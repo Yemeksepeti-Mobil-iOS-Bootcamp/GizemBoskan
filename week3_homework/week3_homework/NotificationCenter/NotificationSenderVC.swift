@@ -19,5 +19,4 @@
         NotificationCenter.default.post(name: .sendDataNotification, object: nil, userInfo: notificationData)
         dismiss(animated: true, completion: nil)
     }
-    
-   }
+}

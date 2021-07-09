@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     lazy var persistentContainer: NSPersistentContainer = {
         
-        let container = NSPersistentContainer(name: "week-3_homework")
+        let container = NSPersistentContainer(name: "week3")
         container.loadPersistentStores { (storeDescription, error) in
             
             if let error = error as NSError? {

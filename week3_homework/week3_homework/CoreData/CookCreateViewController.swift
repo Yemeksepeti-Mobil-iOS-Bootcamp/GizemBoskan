@@ -1,12 +1,16 @@
-   
-   //MARK: - Resmi cell de gösteriniz.
-   
-   //MARK: - Silme işlemi yapınız. Direk silmeden ziyade kullanıcıya uyarı gösterip silmek istediğinizden emin misiniz uyarısı ile işlemi yapınız.
-   
-   import UIKit
-   import CoreData
-   
-   class CookCreateViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+ 
+ //  week3_homework
+ //
+ //  Created by Gizem Boskan on 9.07.2021.
+ 
+ //MARK: - Resmi cell de gösteriniz.
+ 
+ //MARK: - Silme işlemi yapınız. Direk silmeden ziyade kullanıcıya uyarı gösterip silmek istediğinizden emin misiniz uyarısı ile işlemi yapınız.
+ 
+ import UIKit
+ import CoreData
+ 
+ class CookCreateViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     // MARK: - Properties
     var cookLists = [CookModel]()
     @IBOutlet weak var cookImage: UIImageView!
@@ -54,4 +58,4 @@
         
         self.navigationController?.popViewController(animated: true)
     }
-   }
+ }

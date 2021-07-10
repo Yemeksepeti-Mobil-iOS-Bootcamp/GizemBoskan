@@ -1,12 +1,16 @@
-   
-   //MARK: - Resmi cell de gösteriniz.
-   
-   //MARK: - Silme işlemi yapınız. Direk silmeden ziyade kullanıcıya uyarı gösterip silmek istediğinizden emin misiniz uyarısı ile işlemi yapınız.
-   
-   import UIKit
-   import CoreData
-   
-   class CookListViewController: UIViewController {
+
+//  week3_homework
+//
+//  Created by Gizem Boskan on 9.07.2021.
+
+//MARK: - Resmi cell de gösteriniz.
+
+//MARK: - Silme işlemi yapınız. Direk silmeden ziyade kullanıcıya uyarı gösterip silmek istediğinizden emin misiniz uyarısı ile işlemi yapınız.
+
+import UIKit
+import CoreData
+
+class CookListViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var tableView: UITableView!
     var cookLists = [CookModel]()
@@ -50,10 +54,10 @@
             print("Error")
         }
     }
-   }
-   
-   // MARK: - TableView Delegate and Data Source
-   extension CookListViewController: UITableViewDelegate, UITableViewDataSource {
+}
+
+// MARK: - TableView Delegate and Data Source
+extension CookListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         cookLists.count
@@ -105,4 +109,4 @@
             
         }
     }
-   }
+}

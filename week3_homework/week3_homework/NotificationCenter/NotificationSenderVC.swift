@@ -1,10 +1,13 @@
-   
-   
-   //MARK: -  Gönderilecek Data Kullanıcıdan Alınsın...
-   
-   import UIKit
-   
-   class NotificationSenderVC: UIViewController {
+ 
+ //  week3_homework
+ //
+ //  Created by Gizem Boskan on 9.07.2021.
+ 
+ //MARK: -  Gönderilecek Data Kullanıcıdan Alınsın...
+ 
+ import UIKit
+ 
+ class NotificationSenderVC: UIViewController {
     // MARK: - Properties
     var notificationData: [String: Any] = [:]
     
@@ -19,4 +22,4 @@
         NotificationCenter.default.post(name: .sendDataNotification, object: nil, userInfo: notificationData)
         dismiss(animated: true, completion: nil)
     }
-}
+ }

@@ -1,4 +1,8 @@
 
+//  week3_homework
+//
+//  Created by Gizem Boskan on 9.07.2021.
+
 //MARK: - Harita uygulamasında tam adresinizi belirleyecek pinleme yapınız.
 
 import UIKit
@@ -13,7 +17,7 @@ class MapViewController: UIViewController {
     let locationManager = CLLocationManager()
     var lastLocation: CLLocation?
     let regionInMeters: Double = 10000
-
+    
     
     // MARK: - UIViewController Lifecycle
     override func viewDidLoad() {
@@ -21,19 +25,19 @@ class MapViewController: UIViewController {
         addressLabel.text = "Drag the pin to find your location!"
         addressLabel.numberOfLines = 0
         checkLocationServices()
-            }
+    }
     
     // MARK: - Helpers
     func setupLocationManager() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
-  
-      
+    
+    
     func showUserLocationCenterMap() {
         if let location = locationManager.location?.coordinate {
-       let region = MKCoordinateRegion(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
-           
+            let region = MKCoordinateRegion(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+            
             mapView.setRegion(region, animated: true)
         }
     }
@@ -78,7 +82,7 @@ class MapViewController: UIViewController {
 }
 // MARK: - Location Manager Delegate
 extension MapViewController: CLLocationManagerDelegate {
-
+    
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         checkLocationAuthorization()
     }
@@ -107,7 +111,7 @@ extension MapViewController: MKMapViewDelegate {
             }
             
             guard let placemark = placemarks?.first else { return }
-                        
+            
             self.addressLabel.text = "\(placemark.thoroughfare ?? "Street"), \(placemark.locality ?? "City"), \(placemark.subLocality ?? ""), \(placemark.administrativeArea ?? ""), \(placemark.postalCode ?? ""), \(placemark.country ?? "")"
         }
     }

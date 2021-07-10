@@ -83,6 +83,7 @@ extension CookListViewController: UITableViewDelegate, UITableViewDataSource {
             ac.addAction(UIAlertAction(title: "Delete!" , style: .destructive, handler: { _ in
                 self.deleteData(index: indexPath.row)
             }))
+            ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
             present(ac, animated: true)
         }
     }

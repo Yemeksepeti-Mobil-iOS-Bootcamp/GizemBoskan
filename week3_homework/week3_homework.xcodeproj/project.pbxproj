@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E444F6A26B1D7A100CAF720 /* ProminentTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E444F6926B1D7A100CAF720 /* ProminentTabBar.swift */; };
+		8E444F6C26B1E73A00CAF720 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E444F6B26B1E73A00CAF720 /* TabBarController.swift */; };
 		8EB59D24269729CF0082CCD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB59D23269729CF0082CCD9 /* SceneDelegate.swift */; };
 		8EB59D29269729CF0082CCD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB59D27269729CF0082CCD9 /* Main.storyboard */; };
 		8EB59D2E269729D80082CCD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB59D2D269729D80082CCD9 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E444F6926B1D7A100CAF720 /* ProminentTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProminentTabBar.swift; sourceTree = "<group>"; };
+		8E444F6B26B1E73A00CAF720 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8EB59D1E269729CF0082CCD9 /* week3_homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = week3_homework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB59D23269729CF0082CCD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8EB59D28269729CF0082CCD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,8 +88,10 @@
 				8EB59D48269736EE0082CCD9 /* MapView */,
 				8EB59D4E269736EE0082CCD9 /* CoreData */,
 				8EB59D3F2697364E0082CCD9 /* AppDelegate.swift */,
+				8E444F6B26B1E73A00CAF720 /* TabBarController.swift */,
 				8EB59D23269729CF0082CCD9 /* SceneDelegate.swift */,
 				8EB59D27269729CF0082CCD9 /* Main.storyboard */,
+				8E444F6926B1D7A100CAF720 /* ProminentTabBar.swift */,
 				8EB59D2D269729D80082CCD9 /* Assets.xcassets */,
 				8EB59D2F269729D80082CCD9 /* LaunchScreen.storyboard */,
 				8EB59D32269729D80082CCD9 /* Info.plist */,
@@ -219,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E444F6C26B1E73A00CAF720 /* TabBarController.swift in Sources */,
 				8EB59D58269736EF0082CCD9 /* MapViewController.swift in Sources */,
 				8ED8B9BA2698DB6200AE0445 /* week3.xcdatamodeld in Sources */,
 				8EB59D5C269736EF0082CCD9 /* CookCreateViewController.swift in Sources */,
@@ -229,6 +236,7 @@
 				8EB59D3D26972B660082CCD9 /* NotificationListenerVC.swift in Sources */,
 				8EB59D59269736EF0082CCD9 /* User.swift in Sources */,
 				8EB59D24269729CF0082CCD9 /* SceneDelegate.swift in Sources */,
+				8E444F6A26B1D7A100CAF720 /* ProminentTabBar.swift in Sources */,
 				8EB59D44269736A40082CCD9 /* ViewController.swift in Sources */,
 				8EB59D5B269736EF0082CCD9 /* CookListViewController.swift in Sources */,
 				8EB59D3E26972B660082CCD9 /* NotificationSenderVC.swift in Sources */,

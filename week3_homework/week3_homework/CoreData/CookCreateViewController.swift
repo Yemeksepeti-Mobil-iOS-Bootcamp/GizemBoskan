@@ -53,7 +53,7 @@
         do {
             try context.save()
         } catch  {
-            print("Kaydedilemedi...")
+            print("Could not be saved!")
         }
         
         self.navigationController?.popViewController(animated: true)

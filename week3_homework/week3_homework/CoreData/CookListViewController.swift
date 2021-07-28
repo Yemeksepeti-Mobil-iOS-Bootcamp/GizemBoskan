@@ -43,7 +43,7 @@ class CookListViewController: UIViewController {
                     guard let id = result.value(forKey: "id") as? UUID else { return }
                     self.cookLists.append(CookModel(id: id, cookName: name, cookImage: img))
                     
-                    //                    // Add it to the memes array on the Application Delegate
+                   
                     //                    (UIApplication.shared.delegate as! AppDelegate).cookLists.append(cookList)
                 }
                 self.tableView.reloadData()

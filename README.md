@@ -1,1 +1,1 @@
-# GizemBoskan / YemekSepeti iOS Bootcamp Projects
+# GizemBoskan / Yemeksepeti iOS Bootcamp Projects

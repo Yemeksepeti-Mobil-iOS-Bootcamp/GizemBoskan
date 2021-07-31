@@ -1,4 +1,4 @@
-| Movie App Preview | Video Games App Preview | Bus App | 
+| Movie App Preview | Video Games App Preview | Bus App Preview | 
 | --- | --- | --- | 
 | ![Preview](gifs/movieApp.gif) | ![Preview](gifs/videoGameApp.gif) | ![Preview](gifs/BusApp.gif) | 
 
